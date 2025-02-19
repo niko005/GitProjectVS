@@ -210,14 +210,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="StackLeader.exe" size="382424">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="StackLeader.exe" size="382936">
       <assemblyIdentity name="StackLeader" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>hK9fgWoz7vnsOR/QjUhxVyFjLKfZkeCIbiyFsBWzQuE=</dsig:DigestValue>
+        <dsig:DigestValue>lc91DPz+uH/28ymdAisud/iidw3Erdbbu03M6Ksd0N0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

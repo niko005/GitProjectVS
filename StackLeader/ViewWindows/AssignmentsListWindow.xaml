@@ -26,7 +26,7 @@
                 </StackPanel>
                 <StackPanel>
                 <ScrollViewer>
-                <DataGrid MinHeight="100" CanUserAddRows="False" IsReadOnly="False" AutoGenerateColumns="False" PreviewMouseRightButtonDown="dataGridViewTasks_MouseRightButtonDown" x:Name="dataGridViewTasks" MouseRightButtonDown="dataGridViewTasks_MouseRightButtonDown">
+                <DataGrid MinHeight="50" CanUserAddRows="False" IsReadOnly="False" AutoGenerateColumns="False" PreviewMouseRightButtonDown="dataGridViewTasks_MouseRightButtonDown" x:Name="dataGridViewTasks" MouseRightButtonDown="dataGridViewTasks_MouseRightButtonDown">
                     <DataGrid.Columns>
                     <DataGridTemplateColumn Header="Заголовок">
                             <DataGridTemplateColumn.CellTemplate>

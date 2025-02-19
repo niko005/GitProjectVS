@@ -90,9 +90,9 @@ namespace StackLeader
                                 td.Priority = reader["Priority"].ToString();
                                 td.Deadline = reader["Deadline"] != DBNull.Value ? (DateTime?)reader["Deadline"] : null;
                                 td.CompletionDate = reader["CompletionDate"] != DBNull.Value ? (DateTime?)reader["CompletionDate"] : null;
-                                td.PriorityID = (int)reader["PriorityID"];
+                                td.PriorityID = (byte)reader["PriorityID"];
                                 td.Documentname = reader["DocumentName"].ToString();
-                                td.StatusID = (int)reader["StatusID"];
+                                td.StatusID = (byte)reader["StatusID"];
                                 td.DocumentID = reader["DocumentID"] != DBNull.Value ? (int?)reader["DocumentID"] : null;  // Проверка на DBNull
                                 td.Document = reader["Document"] != DBNull.Value ? (byte[])reader["Document"] : null;
                                 td.HasDocument = td.Document != null && td.Document.Length > 0;

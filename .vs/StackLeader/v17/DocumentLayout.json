@@ -3,40 +3,12 @@
   "WorkspaceRootPath": "D:\\ProjectVS\\StackLeader\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E228FC4-DD7B-4F07-94C7-3C66351AE451}|StackLeader\\StackLeader.csproj|d:\\projectvs\\stackleader\\stackleader\\viewwindows\\registerwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{0E228FC4-DD7B-4F07-94C7-3C66351AE451}|StackLeader\\StackLeader.csproj|solutionrelative:stackleader\\viewwindows\\registerwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E228FC4-DD7B-4F07-94C7-3C66351AE451}|StackLeader\\StackLeader.csproj|d:\\projectvs\\stackleader\\stackleader\\viewwindows\\registerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{0E228FC4-DD7B-4F07-94C7-3C66351AE451}|StackLeader\\StackLeader.csproj|solutionrelative:stackleader\\viewwindows\\registerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E228FC4-DD7B-4F07-94C7-3C66351AE451}|StackLeader\\StackLeader.csproj|d:\\projectvs\\stackleader\\stackleader\\viewwindows\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{0E228FC4-DD7B-4F07-94C7-3C66351AE451}|StackLeader\\StackLeader.csproj|solutionrelative:stackleader\\viewwindows\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E228FC4-DD7B-4F07-94C7-3C66351AE451}|StackLeader\\StackLeader.csproj|D:\\ProjectVS\\StackLeader\\stackleader\\viewwindows\\homepage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{0E228FC4-DD7B-4F07-94C7-3C66351AE451}|StackLeader\\StackLeader.csproj|solutionrelative:stackleader\\viewwindows\\homepage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E228FC4-DD7B-4F07-94C7-3C66351AE451}|StackLeader\\StackLeader.csproj|D:\\ProjectVS\\StackLeader\\stackleader\\viewwindows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{0E228FC4-DD7B-4F07-94C7-3C66351AE451}|StackLeader\\StackLeader.csproj|solutionrelative:stackleader\\viewwindows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0E228FC4-DD7B-4F07-94C7-3C66351AE451}|StackLeader\\StackLeader.csproj|D:\\ProjectVS\\StackLeader\\stackleader\\viewwindows\\assignmentslistwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{0E228FC4-DD7B-4F07-94C7-3C66351AE451}|StackLeader\\StackLeader.csproj|solutionrelative:stackleader\\viewwindows\\assignmentslistwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E228FC4-DD7B-4F07-94C7-3C66351AE451}|StackLeader\\StackLeader.csproj|D:\\ProjectVS\\StackLeader\\stackleader\\employeedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E228FC4-DD7B-4F07-94C7-3C66351AE451}|StackLeader\\StackLeader.csproj|solutionrelative:stackleader\\employeedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0E228FC4-DD7B-4F07-94C7-3C66351AE451}|StackLeader\\StackLeader.csproj|D:\\ProjectVS\\StackLeader\\stackleader\\viewwindows\\addassignments.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E228FC4-DD7B-4F07-94C7-3C66351AE451}|StackLeader\\StackLeader.csproj|solutionrelative:stackleader\\viewwindows\\addassignments.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E228FC4-DD7B-4F07-94C7-3C66351AE451}|StackLeader\\StackLeader.csproj|D:\\ProjectVS\\StackLeader\\stackleader\\viewwindows\\assignmentslistwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{0E228FC4-DD7B-4F07-94C7-3C66351AE451}|StackLeader\\StackLeader.csproj|solutionrelative:stackleader\\viewwindows\\assignmentslistwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,109 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RegisterWindow.xaml.cs",
-              "DocumentMoniker": "D:\\ProjectVS\\StackLeader\\StackLeader\\ViewWindows\\RegisterWindow.xaml.cs",
-              "RelativeDocumentMoniker": "StackLeader\\ViewWindows\\RegisterWindow.xaml.cs",
-              "ToolTip": "D:\\ProjectVS\\StackLeader\\StackLeader\\ViewWindows\\RegisterWindow.xaml.cs",
-              "RelativeToolTip": "StackLeader\\ViewWindows\\RegisterWindow.xaml.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T21:08:10.084Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RegisterWindow.xaml",
-              "DocumentMoniker": "D:\\ProjectVS\\StackLeader\\StackLeader\\ViewWindows\\RegisterWindow.xaml",
-              "RelativeDocumentMoniker": "StackLeader\\ViewWindows\\RegisterWindow.xaml",
-              "ToolTip": "D:\\ProjectVS\\StackLeader\\StackLeader\\ViewWindows\\RegisterWindow.xaml",
-              "RelativeToolTip": "StackLeader\\ViewWindows\\RegisterWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-19T21:06:41.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomePage.xaml.cs",
-              "DocumentMoniker": "D:\\ProjectVS\\StackLeader\\StackLeader\\ViewWindows\\HomePage.xaml.cs",
-              "RelativeDocumentMoniker": "StackLeader\\ViewWindows\\HomePage.xaml.cs",
-              "ToolTip": "D:\\ProjectVS\\StackLeader\\StackLeader\\ViewWindows\\HomePage.xaml.cs",
-              "RelativeToolTip": "StackLeader\\ViewWindows\\HomePage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T19:05:38.149Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomePage.xaml",
-              "DocumentMoniker": "D:\\ProjectVS\\StackLeader\\StackLeader\\ViewWindows\\HomePage.xaml",
-              "RelativeDocumentMoniker": "StackLeader\\ViewWindows\\HomePage.xaml",
-              "ToolTip": "D:\\ProjectVS\\StackLeader\\StackLeader\\ViewWindows\\HomePage.xaml",
-              "RelativeToolTip": "StackLeader\\ViewWindows\\HomePage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-19T19:02:54.419Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\ProjectVS\\StackLeader\\StackLeader\\ViewWindows\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "StackLeader\\ViewWindows\\MainWindow.xaml",
-              "ToolTip": "D:\\ProjectVS\\StackLeader\\StackLeader\\ViewWindows\\MainWindow.xaml",
-              "RelativeToolTip": "StackLeader\\ViewWindows\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-19T19:02:38.785Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AssignmentsListWindow.xaml.cs",
-              "DocumentMoniker": "D:\\ProjectVS\\StackLeader\\StackLeader\\ViewWindows\\AssignmentsListWindow.xaml.cs",
-              "RelativeDocumentMoniker": "StackLeader\\ViewWindows\\AssignmentsListWindow.xaml.cs",
-              "ToolTip": "D:\\ProjectVS\\StackLeader\\StackLeader\\ViewWindows\\AssignmentsListWindow.xaml.cs",
-              "RelativeToolTip": "StackLeader\\ViewWindows\\AssignmentsListWindow.xaml.cs",
-              "ViewState": "AgIAALoAAAAAAAAAAAAIwMsAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T21:50:46.686Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "AssignmentsListWindow.xaml",
               "DocumentMoniker": "D:\\ProjectVS\\StackLeader\\StackLeader\\ViewWindows\\AssignmentsListWindow.xaml",
               "RelativeDocumentMoniker": "StackLeader\\ViewWindows\\AssignmentsListWindow.xaml",
               "ToolTip": "D:\\ProjectVS\\StackLeader\\StackLeader\\ViewWindows\\AssignmentsListWindow.xaml",
               "RelativeToolTip": "StackLeader\\ViewWindows\\AssignmentsListWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-18T21:47:10.029Z"
+              "WhenOpened": "2025-02-18T21:47:10.029Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EmployeeData.cs",
-              "DocumentMoniker": "D:\\ProjectVS\\StackLeader\\StackLeader\\EmployeeData.cs",
-              "RelativeDocumentMoniker": "StackLeader\\EmployeeData.cs",
-              "ToolTip": "D:\\ProjectVS\\StackLeader\\StackLeader\\EmployeeData.cs",
-              "RelativeToolTip": "StackLeader\\EmployeeData.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T18:49:49.443Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "AddAssignments.xaml.cs",
               "DocumentMoniker": "D:\\ProjectVS\\StackLeader\\StackLeader\\ViewWindows\\AddAssignments.xaml.cs",
               "RelativeDocumentMoniker": "StackLeader\\ViewWindows\\AddAssignments.xaml.cs",
               "ToolTip": "D:\\ProjectVS\\StackLeader\\StackLeader\\ViewWindows\\AddAssignments.xaml.cs",
               "RelativeToolTip": "StackLeader\\ViewWindows\\AddAssignments.xaml.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAuwFwAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAANEAAAAAAAAAAAAswCoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T16:50:27.777Z"
+              "WhenOpened": "2024-11-01T16:50:27.777Z",
+              "EditorCaption": ""
             }
           ]
         }

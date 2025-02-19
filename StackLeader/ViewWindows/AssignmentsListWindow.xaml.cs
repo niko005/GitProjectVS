@@ -27,16 +27,24 @@ namespace StackLeader.ViewWindows
         public AssignmentsListWindow()
         {
             InitializeComponent();
+            this.DataContext = this; // или другой контекст данных
             if (AuthorizationWindow.Username != null)
                 displayTasksData();
             WindowsHelper.AddAssignments.LoadEmployees();
         }
         public void displayTasksData()
         {
-            TaskData td = new TaskData();
-            List<TaskData> TaskData = td.taskListData();
-            dataGridViewTasks.ItemsSource = null;
-            dataGridViewTasks.ItemsSource = TaskData;
+            try
+            {
+                TaskData td = new TaskData();
+                List<TaskData> TaskData = td.taskListData();
+                dataGridViewTasks.ItemsSource = null;
+                dataGridViewTasks.ItemsSource = TaskData;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка при загрузке данных: " + ex.Message);
+            }
         }
 
         private void AssignedToEmployee_SelectionChanged(object sender, SelectionChangedEventArgs e)
