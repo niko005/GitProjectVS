@@ -18,7 +18,7 @@ namespace StackLeader.ViewWindows
 {
     public partial class RegisterWindow : Window
     {
-        private const string correctAdminKey = "89285144800"; // Замените на реальный привилегированный ключ
+        private const string correctAdminKey = "5105"; // Замените на реальный привилегированный ключ
         public RegisterWindow()
         {
             InitializeComponent();
