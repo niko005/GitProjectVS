@@ -1,0 +1,141 @@
+﻿<Window x:Class="StackLeader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StackLeader"
+        mc:Ignorable="d"
+        Title="MainWindow" WindowStyle="None" Height="600" Width="1100" WindowStartupLocation="CenterScreen" MouseLeftButtonDown="Window_MouseLeftButtonDown" AllowsTransparency="True"
+        Background="Transparent">
+    <Window.Resources>
+        <Style x:Key="menuButton" TargetType="Button">
+            <Setter Property="Background" Value="#333333"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Border Background="{TemplateBinding Background}" CornerRadius="10">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                            <Border Background="#1f1f1f" CornerRadius="10" Opacity="0" Name="hoverOverlay"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="hoverOverlay" Property="Opacity" Value="0.2"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="hoverOverlay" Property="Opacity" Value="0.4"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Border CornerRadius="30,30,0,0" Background="#1f1f1f" Grid.Row="0"></Border>
+        <Border  CornerRadius="0,0,30,30" Grid.Row="1" Background="#4d4d4d"></Border>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"></ColumnDefinition>
+                <ColumnDefinition Width="135"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Border Width="60" Height="60" Padding="3" Background="LightGray" CornerRadius="100"
+                        DockPanel.Dock="Top" HorizontalAlignment="Left" Margin="10 0 0 0" Grid.Column="0">
+                <Ellipse>
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="/Images/PrototypeImage.png" ></ImageBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Border>
+
+            <TextBlock Margin="0,7.5,0,0" Text="Time" x:Name="dataText" FontSize="12" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="#fafafa" Grid.Column="1"/>
+            <TextBlock Text="StackLeader" Foreground="#fafafa" FontWeight="Bold" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="1"></TextBlock>
+            <TextBlock Text="Stavropol" Foreground="#fafafa" FontStyle="Italic" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,30,0,0" Grid.Column="1"></TextBlock>
+            <Rectangle Width="5" Grid.Column="1"  Fill="#fafafa" HorizontalAlignment="Right"/>
+
+            <Grid Grid.Column="2">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <!--Главное-->
+                <StackPanel HorizontalAlignment="Left" Grid.Column="0" VerticalAlignment="Center" Margin="10,0,0,0">
+                    <Button Style="{StaticResource menuButton}" Cursor="Hand" Click="Click_Home" x:Name="home_btn">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Главная" Padding="10"></TextBlock>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+
+                <!--Личный кабинет-->
+                <StackPanel  HorizontalAlignment="Left" Grid.Column="1" VerticalAlignment="Center">
+                    <Button Style="{StaticResource menuButton}" Cursor="Hand" Click="Click_Personal_Account" x:Name="personal_account_btn">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Личный кабинет" Padding="10"></TextBlock>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+
+                <!--Сотрудники-->
+                <StackPanel  HorizontalAlignment="Left" Grid.Column="2" VerticalAlignment="Center">
+                    <Button Style="{StaticResource menuButton}" Cursor="Hand" Click="Click_Employee" x:Name="employee_btn">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Сотрудники" Padding="10"></TextBlock>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+
+                <!--Приветственное окно-->
+                <StackPanel  HorizontalAlignment="Right" Grid.Column="3" Margin="10,0,0,0" VerticalAlignment="Center">
+                    <TextBlock x:Name="HelloUserText" FontSize="14" FontWeight="Bold"
+                    HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#fafafa" Padding="10,3,3,3"/>
+                </StackPanel>
+
+                <Frame HorizontalAlignment="Left" Grid.Column="3" VerticalAlignment="Center" x:Name="Frame_Notification" Margin="10,0,0,0" NavigationUIVisibility="Hidden" />
+            </Grid>
+
+            <!--Выход-->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="2" VerticalAlignment="Center" Margin="0,0,10,0">
+                <Button Style="{StaticResource menuButton}" Cursor="Hand" Click="Click_Notifications" x:Name="notifications_btn" Margin="0,0,40,0">
+                        <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                            <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Images/NotificationImage.png" Height="30" />
+                            <TextBlock HorizontalAlignment="Right" Foreground="Red" x:Name="UnreadNotificationsCount" FontSize="12" FontWeight="Bold"/>
+                        </StackPanel>
+                    </Button>
+                <Button Margin="0,0,15,0"  Style="{StaticResource menuButton}" Cursor="Hand" Click="Click_Exit" x:Name="exit_btn" Width="30" Height="30">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Images/icons8_logout_rounded_up_filled_25px.png" />
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </Grid>
+        <TextBlock x:Name="TitleText" Grid.Row="1" FontSize="12" FontWeight="SemiBold"
+                    HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#fafafa" Padding="10,3,3,3"/>
+        <Frame x:Name="Frame_W" Margin="0,20,0,0" Grid.Row="1" NavigationUIVisibility="Hidden" Padding="0"/>
+    </Grid>
+</Window>
+
+
+    
+    

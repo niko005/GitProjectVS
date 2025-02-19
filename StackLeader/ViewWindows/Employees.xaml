@@ -1,0 +1,104 @@
+﻿<Page x:Class="StackLeader.ViewWindows.Employees"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StackLeader.ViewWindows"
+      mc:Ignorable="d" 
+      d:DesignHeight="485" d:DesignWidth="1100"
+      Title="Employees">
+    <Page.Resources>
+        <Style x:Key="menuButton" TargetType="Button">
+            <Setter Property="Background" Value="#494646"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Border Background="{TemplateBinding Background}" CornerRadius="10">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                            <Border Background="#1f1f1f" CornerRadius="10" Opacity="0" Name="hoverOverlay"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="hoverOverlay" Property="Opacity" Value="0.2"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="hoverOverlay" Property="Opacity" Value="0.4"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    <Border x:Name="MainBorder" Background="#CCCCCC" CornerRadius="0,0,30,30">
+        <Grid>
+
+            <Border  Background="#E6E6E6" Grid.Column="1" Margin="15,20,15,15" CornerRadius="20">
+
+                <StackPanel >
+                    <StackPanel>
+                        <TextBlock Text="  Список пользователей" FontSize="20" FontStyle="Italic" FontWeight="Medium"></TextBlock>
+                        <DataGrid IsReadOnly="True" AutoGenerateColumns="False" x:Name="dataGridAddEmpl" Background="DarkGray" Height="280" SelectionChanged="dataGridAddEmpl_SelectionChanged" >
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Почта" Binding="{Binding Email}" />
+                                <DataGridTextColumn Header="Никнейм" Binding="{Binding Username}" />
+                                <DataGridTextColumn Header="Фамилие" Binding="{Binding Lastname}" />
+                                <DataGridTextColumn Header="Имя" Binding="{Binding Firstname}" />
+                                <DataGridTextColumn Header="Полное имя" Binding="{Binding FullName}" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </StackPanel>
+
+                    <StackPanel  Margin="0,20,0,0">
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Orientation="Vertical" Margin="10,0,0,0" Visibility="Collapsed">
+                                <TextBlock Padding="3" Text="ID" FontSize="14" VerticalAlignment="Center"></TextBlock>
+                                <TextBox x:Name="addEmployee_id" IsEnabled="False" Style="{DynamicResource TextBoxStyle}" Height="30" Width="40"></TextBox>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Margin="10,0,0,0">
+                                <TextBlock Padding="3" Text="Фамилие" FontSize="14" VerticalAlignment="Center"></TextBlock>
+                                <TextBox x:Name="addEmployee_lastname" IsEnabled="False" Style="{DynamicResource TextBoxStyle}" Height="30" Width="200"></TextBox>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Margin="10,0,0,0">
+                                <TextBlock Padding="3" Text="Имя:" FontSize="14" VerticalAlignment="Center"></TextBlock>
+                                <TextBox x:Name="addEmployee_firstname" IsEnabled="False" Style="{DynamicResource TextBoxStyle}" Height="30" Width="200"></TextBox>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Margin="10,0,0,0">
+                                <TextBlock Padding="3" Text="Почта:" FontSize="14" VerticalAlignment="Center"></TextBlock>
+                                <TextBox x:Name="addEmployee_email" IsEnabled="False" Style="{DynamicResource TextBoxStyle}" Height="30" Width="200"></TextBox>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Margin="10,0,0,0">
+                                <TextBlock  Padding="3" Text="Никнейм:" FontSize="14" VerticalAlignment="Center"></TextBlock>
+                                <TextBox IsEnabled="False" x:Name="addEmployee_username" Style="{DynamicResource TextBoxStyle}" Height="30" Width="200"></TextBox>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Margin="10,0,0,0">
+                                <TextBlock Padding="3" Text="Пароль:" FontSize="14" VerticalAlignment="Center"></TextBlock>
+                                <TextBox x:Name="addEmployee_password" IsEnabled="False" Style="{DynamicResource TextBoxStyle}" Height="30" Width="200"></TextBox>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Margin="18,10,0,0" Orientation="Horizontal">
+                            <Button Height="40" Style="{StaticResource menuButton}" Cursor="Hand" Click="Click_Back">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="/Images/back_button2.png" />
+                                    </StackPanel>
+                            </Button>
+                            <Button  HorizontalAlignment="Right" Margin="900,0,0,0" Padding="20" Style="{DynamicResource RoundCorner}" Background="#444444" Cursor="Hand" Click="Click_Add_View_Employee" x:Name="Add_Employee_btn">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Изменить" FontSize="14" Padding="15" Foreground="White"></TextBlock>
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Border>
+</Page>

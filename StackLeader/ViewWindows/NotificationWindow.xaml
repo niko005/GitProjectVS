@@ -1,0 +1,27 @@
+﻿<Window x:Class="StackLeader.ViewWindows.NotificationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StackLeader.ViewWindows"
+        mc:Ignorable="d" WindowStyle="None"
+        Title="NotificationWindow" Topmost="True"  Background="Transparent" MaxHeight="250" MaxWidth="250">
+    <Border Background="#f0f0f0" CornerRadius="20"  Padding="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Уведомления" FontSize="14" FontWeight="Bold"/>
+            <ListView x:Name="NotificationsListView" Grid.Row="1" Margin="5" PreviewMouseDoubleClick="listView_PreviewMouseDoubleClick">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Дата" DisplayMemberBinding="{Binding Date}" Width="50"/>
+                        <GridViewColumn Header="Сообщение" DisplayMemberBinding="{Binding Message}" Width="200"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+    </Border>
+</Window>

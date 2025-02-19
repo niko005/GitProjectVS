@@ -1,0 +1,86 @@
+﻿<Page x:Class="StackLeader.ViewWindows.AssignmentsListWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StackLeader.ViewWindows"
+      mc:Ignorable="d" 
+      d:DesignHeight="485" d:DesignWidth="1100"
+      Title="AssignmentsListWindow">
+    <Page.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+    </Page.Resources>
+    <Border x:Name="MainBorder" Background="#CCCCCC" CornerRadius="0,0,30,30">
+        <Border Background="#E6E6E6" Grid.Column="1" Margin="15,20,15,15" CornerRadius="20">
+            <StackPanel>
+                <TextBlock Text="  Список поручений" FontSize="20" FontStyle="Italic" FontWeight="Medium" />
+                <StackPanel Orientation="Horizontal">
+                <CheckBox VerticalAlignment="Bottom" Margin="10,0,0,5" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" Content="Завершенные" x:Name="AllTasks_Check" />
+                <StackPanel x:Name="NotAdminHiddenCombobox" Margin="20,0,0,5">
+                    <Label Content="Ответственный:" />
+                    <ComboBox x:Name="AssignedToComboBox" SelectionChanged="AssignetToComboBox_Click"></ComboBox>
+                </StackPanel>
+                    <StackPanel VerticalAlignment="Bottom" Margin="15,5,5,5">
+                        <CheckBox Checked="CheckBox_AllTask_Checked" Unchecked="CheckBox_AllTask_Unchecked" Content="Все" x:Name="AllEmployeeTask_Check"/>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel>
+                <ScrollViewer>
+                <DataGrid MinHeight="100" CanUserAddRows="False" IsReadOnly="False" AutoGenerateColumns="False" PreviewMouseRightButtonDown="dataGridViewTasks_MouseRightButtonDown" x:Name="dataGridViewTasks" MouseRightButtonDown="dataGridViewTasks_MouseRightButtonDown">
+                    <DataGrid.Columns>
+                    <DataGridTemplateColumn Header="Заголовок">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Title}" TextWrapping="Wrap" MaxWidth="200" />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="Описание">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Description}" TextWrapping="Wrap" MaxWidth="450" />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="Назначен" MaxWidth="90">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                        <TextBlock Text="{Binding AssignedToEmployee}" TextWrapping="Wrap" MaxWidth="350" />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTextColumn Header="Статус" Binding="{Binding Status}" />
+                                <DataGridTemplateColumn Header="Дедлайн" MaxWidth="80">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Deadline}" TextWrapping="Wrap" MaxWidth="350" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                        <DataGridTextColumn Header="Приоритет" Binding="{Binding Priority}"/>
+                        <DataGridTemplateColumn Header="Статус">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <ComboBox SelectionChanged="StatusComboBox_SelectionChanged">
+                                        <ComboBoxItem Content="Открыто" />
+                                        <ComboBoxItem Content="В процессе" />
+                                        <ComboBoxItem Content="Завершено" />
+                                    </ComboBox>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="Файл">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Content="Скачать"  Click="DownloadFileButton_Click" Visibility="{Binding HasDocument, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+                </ScrollViewer>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Border>
+</Page>
